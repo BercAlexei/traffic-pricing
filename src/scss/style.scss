@@ -1,0 +1,23 @@
+@import 'base/libs';
+@import 'base/fonts';
+@import 'base/vars';
+@import 'base/animation';
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+// .container {
+//     position: relative;
+//     max-width: 940px;
+//     margin: 0 auto;
+// }
+
+@import 'blocks/traffic';
+@import 'blocks/title';
+@import 'blocks/form';
+@import 'blocks/triangle';
+@import 'blocks/slider';
+@import 'blocks/check';
+
+@import 'base/media';

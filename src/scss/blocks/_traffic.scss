@@ -1,0 +1,28 @@
+.traffic {
+    min-height: 100vh;
+    padding-top: 104px;
+    background-color: #F9FAFF;
+    position: relative;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        z-index: 1;
+        background-color: #F1F5FE;
+        top: 0;
+        left: 0;
+        height: 400px;
+        width: 100vw;
+        border-radius: 0 0 0 190px;
+    }
+    &__subtitle {
+        position: relative;
+        z-index: 1;
+        margin-top: 12px;
+        font-weight: 600;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+        color: $second_color;
+    }
+}

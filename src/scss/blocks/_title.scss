@@ -1,0 +1,30 @@
+.title {
+    position: relative;
+    z-index: 1;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: $main_color;
+    &::before, &:after {
+        content: '';
+        background-color: transparent ;
+        position: absolute;
+        left: 50%;
+        top: -20px;
+        transform: translateX(-50%);
+        z-index: -1;
+        display: block;
+        width: 126px;
+        height: 126px;
+        border-radius: 50%;
+        border: 1px solid #CFD8EF;
+    }
+
+    &:after {
+        width: 82px;
+        height: 82px;
+        transform: none;
+        top: -45px;
+    }
+}
