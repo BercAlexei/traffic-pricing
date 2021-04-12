@@ -10,7 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
         btnRight = document.querySelector('.right'),
         pagesPrice = document.querySelector('.form__text'),
         checkbox = document.querySelector('.checkbox'),
-        check = document.querySelector('#checked');
+        check = document.querySelector('#checked'),
+        modal = document.querySelector('.modal'),
+        btn = document.querySelectorAll('.button');
+
+
 
         function textChanges(page, price) {
             let priceDiscount = price - (price/100 * 25);

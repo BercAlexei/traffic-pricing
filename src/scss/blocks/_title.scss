@@ -1,5 +1,6 @@
 .title {
     position: relative;
+    margin: 0;
     z-index: 1;
     font-weight: 800;
     font-size: 28px;
@@ -26,5 +27,11 @@
         height: 82px;
         transform: none;
         top: -45px;
+    }
+    &_modal {
+        font-size: 22px;
+        &:before, &:after {
+            display: none;
+        }
     }
 }
