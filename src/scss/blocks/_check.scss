@@ -64,7 +64,7 @@
                 background-color: #7AEADF;
             }
             &:after {
-                animation: check 1s ease;
+                animation: check .3s ease forwards;
             }
             
         }
@@ -73,7 +73,7 @@
                 background-color: #CFD8EF;
             }
             &:after {
-                animation: checkoff 1s ease;
+                animation: checkoff .3s ease forwards;
             }
         }
     }

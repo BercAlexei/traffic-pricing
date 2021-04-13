@@ -13,9 +13,9 @@
         background: linear-gradient(90deg, rgb(164, 243, 235) 0%, rgb(236, 240, 251) 0%);
 
         &::-webkit-slider-thumb {
+            outline: none;
             appearance: none;
             background: #10D8C4 url(../icons/triangles.png) center center no-repeat;
-            // background-image: url(../icons/triangles.png) center center;
             border-radius: 50%;
             cursor: pointer;
             width: 40px;

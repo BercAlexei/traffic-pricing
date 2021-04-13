@@ -1,18 +1,19 @@
 @keyframes check {
 
-    50% {
-        left: -25px;
-    }
-    100% {
+    0% {
         left: -45px;
+    }
+    
+    100% {
+        left: -25px;
     }
 }
 
 @keyframes checkoff {
-    50% {
+    from {
         left: -25px;
     }
-    100% {
+    to {
         left: -45px;
     }
 }

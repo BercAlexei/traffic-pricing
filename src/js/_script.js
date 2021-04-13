@@ -12,13 +12,36 @@ document.addEventListener('DOMContentLoaded', () => {
         btn = document.querySelectorAll('.button');
 
 
+        //Вызов модального окна
+        btn.forEach(item => {
+            item.addEventListener('click', (e) => {
+                e.preventDefault();
+                modal.classList.toggle('modal_active');
+            })
+        })
+
+        modal.addEventListener('click', (e) => {
+            if (e.target === modal) {
+                modal.classList.toggle('modal_active');
+            }
+        })
+
+        document.addEventListener('keydown', (e) => {
+            if (e.code === 'Escape') {
+                modal.classList.remove('modal_active')
+            }
+        })
         
+
+
+        //Закрашивание progressbar  
         function sliderProgress() {
             let sliderProgressColor = `linear-gradient(90deg, rgb(164, 243, 235) ${slider.value}%, rgb(236, 240, 251) ${slider.value}%)`;
                 slider.style.background = sliderProgressColor;
         }
         sliderProgress();
 
+        //Изменения на странице Вместе с ползунком
         function textChanges(page, price) {
 
             let priceDiscount = price - (price/100 * 25);
