@@ -16,17 +16,16 @@
 
         <form action="#" class="form">
             <div class="form__text"></div>
-            
-            <div class="slider">
-                <input data-slider type="range" name="range" min="0" max="100" step="25">
 
-            </div>
-                
+            <input class="slider" data-slider type="range" name="range" min="0" max="100" step="25">
+
             <div class="check">
                 Monthly Billing
                 <input type="checkbox" id="checked">
-                <label class="checkbox" for="checked">Yearly Billing</label> 
-                <div class="discount">25% discount</div>
+                <label class="checkbox" for="checked">Yearly Billing</label>
+                <div class="check__discount">25% discount</div>
+                <div class="check__discount check__discount_mini">-25%</div>
+
             </div>
 
             <hr>
@@ -37,11 +36,11 @@
                     <li>100% data ownership </li>
                     <li>Email reports</li>
                 </ul>
-                <button class="button">Start my trial</button>
+                <button class="button button_main">Start my trial</button>
             </div>
 
-            
-            
+
+
         </form>
 
         <div class="modal">
@@ -52,7 +51,7 @@
             </div>
         </div>
         </div>
-        
+
     </main>
     <script src="js/script.min.js"></script>
 </body>

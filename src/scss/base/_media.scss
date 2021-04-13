@@ -1,7 +1,111 @@
-@media (max-width: 1200px) {}
+@media (max-width: 545px) {
+    .traffic {
+        padding-top: 89px;
 
-@media (max-width: 992px) {}
+    }
 
-@media (max-width: 768px) {}
 
-@media (max-width: 576px) {}
+
+    .form {
+        margin-top: 64px;
+        max-width: 90%;
+    }
+
+}
+
+@media (max-width: 520px) {
+
+    .form {
+        &__text {
+            font-size: 12px;
+        }
+
+        &__price {
+            font-size: 12px;
+        }
+
+        span {
+            font-size: 32px;
+            line-height: 32px;
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .traffic {
+        &__subtitle {
+            font-size: 14px;
+            line-height: 23px;
+        }
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .check {
+        margin-right: 0;
+        justify-content: center;
+    }
+
+    .form {
+       hr {
+           margin-top: 42px;
+       }
+        &__footer {
+            margin-top: 24px;
+            flex-direction: column;
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                padding: 0;
+            }
+        }
+    }
+
+    .button {
+        &_main {
+            margin-top: 33px;
+        }
+    }
+}
+
+@media (max-width: 460px) {
+    .form {
+        padding: 35px 40px;
+    }
+}
+
+@media (max-width: 445px) {
+    .form {
+        &__text {
+            font-size: 14px;
+            flex-direction: column;
+        }
+        &__price {
+            margin-top: 89px;
+        }
+        hr {
+            margin-top: 28px;
+        }
+    }
+
+    .slider {
+        position: relative;
+        top: -90px;
+        margin-top: 0;
+    }
+
+    .check {
+        font-size: 11px;
+        margin-top: 0;
+        &__discount {
+            display: none;
+            &_mini {
+                display: flex;
+            }
+        }
+    }
+}

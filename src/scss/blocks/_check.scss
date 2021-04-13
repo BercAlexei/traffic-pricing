@@ -10,19 +10,24 @@
     color: #848EAD;
     margin-right: 10px;
 
-    .discount {
+    &__discount {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: center;
         align-items: center;
         margin-left: 9px;
         border-radius: 9.5px;
         background-color: #FEEDE8;
         font-size: 10px;
-        line-height: 14px;
+        line-height: 10px;
         text-align: center;
         color: #FF8D68;
         width: 80px;
         height: 19px;
+        &_mini {
+            display: none;
+            width: 41px;
+            height: 19px;
+        }
     }
 
     input[type=checkbox] {
