@@ -56,7 +56,7 @@
             position: absolute;
             top: 0;
             left: -45px;
-            background: #FFFFFF;
+            background-color: #FFFFFF;
             
         }
         &_active {
@@ -67,6 +67,14 @@
                 animation: check 1s ease;
             }
             
+        }
+        &_disabled {
+            &:before {
+                background-color: #CFD8EF;
+            }
+            &:after {
+                animation: checkoff 1s ease;
+            }
         }
     }
 }
