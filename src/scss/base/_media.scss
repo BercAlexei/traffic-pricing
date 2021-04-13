@@ -1,7 +1,7 @@
 @media (max-width: 545px) {
     .traffic {
         padding-top: 89px;
-
+        padding-bottom: 45px;
     }
 
 
@@ -45,7 +45,6 @@
 
     .check {
         margin-right: 0;
-        justify-content: center;
     }
 
     .form {
@@ -80,6 +79,7 @@
 
 @media (max-width: 445px) {
     .form {
+        padding: 33px 24px;
         &__text {
             font-size: 14px;
             flex-direction: column;
@@ -99,12 +99,54 @@
     }
 
     .check {
-        font-size: 11px;
+        font-size: .75em;
         margin-top: 0;
         &__discount {
             display: none;
             &_mini {
                 display: flex;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    .title {
+        font-size: 20px;
+        line-height: 20px;
+    }
+
+    .traffic {
+        &__subtitle {
+            font-size: 13px;
+            line-height: 23px;
+            br {
+                display: block;
+            }
+        }
+    }
+}
+
+@media (max-width: 356px) {
+    .traffic {
+        padding-top: 69px;
+        padding-bottom: 45px;
+    }
+
+    .form {
+        margin-top: 50px;
+    }
+
+    .check {
+        justify-content: center;
+        &__monthly {
+            display: none;
+        }
+
+        &__discount {
+            display: flex;
+            &_mini {
+                display: none;
             }
         }
     }

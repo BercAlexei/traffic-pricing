@@ -24,5 +24,8 @@
         line-height: 20px;
         text-align: center;
         color: $second_color;
+        br {
+            display: none;
+        }
     }
 }
