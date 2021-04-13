@@ -47,7 +47,7 @@ gulp.task('scripts', function(){
                      "src/js/_script.js"
                     ])
         .pipe(concat('script.min.js'))
-        .pipe(uglify())
+        // .pipe(uglify())
         .pipe(gulp.dest('dist/js'))
         .pipe(browserSync.stream());
   });
