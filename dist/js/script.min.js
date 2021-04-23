@@ -54,16 +54,23 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     
         function priceChanges() {
-            if (slider.value == 0) {
-                textChanges('10K', 8)
-            } if (slider.value == 25) {
-                textChanges('50K', 12)
-            } if (slider.value == 50) {
-                textChanges('100K', 16)
-            } if (slider.value == 75) {
-                textChanges('500K', 24)
-            } if (slider.value == 100) {
-                textChanges('1M', 36)
+
+            switch (slider.value) {
+                case '0' :
+                    textChanges('10K', 8);
+                    break;
+                case '25' : 
+                    textChanges('50K', 12);
+                    break;
+                case '50' :
+                    textChanges('100K', 16);
+                    break;
+                case '75' : 
+                    textChanges('500K', 24);
+                    break;
+                case '100' : 
+                    textChanges('1M', 36);
+                    break;
             }
         }
 
