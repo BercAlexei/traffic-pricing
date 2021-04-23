@@ -6,10 +6,10 @@
     outline: none;
     height: 8px;
     border-radius: 5px;
-    background: linear-gradient(90deg, rgb(164, 243, 235) 0%, rgb(236, 240, 251) 0%);
     &::-webkit-slider-thumb {
         outline: none;
-        -webkit-appearance: none;
+        appearance: none;
+        border: none;
         background: #10D8C4 url(../icons/triangles.png) center center no-repeat;
         border-radius: 50%;
         cursor: pointer;
@@ -30,7 +30,7 @@
     //стилизация ползунка для mozilla
     &::-moz-range-thumb {
         outline: none;
-        -webkit-appearance: none;
+        appearance: none;
         border: none;
         background: #10D8C4 url(../icons/triangles.png) center center no-repeat;
         border-radius: 50%;
